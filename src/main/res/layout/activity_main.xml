@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rkj"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/ks"
+        android:layout_width="388dp"
+        android:layout_height="360dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="1"
+        android:background="@drawable/xyz"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/i1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="fade"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:onClick="fade"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:onClick="fade"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="30dp"
+            android:onClick="fade"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:onClick="fade"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:onClick="fade"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="fade"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:onClick="fade"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp"
+            android:onClick="fade"
+            android:tag="8" />
+    </GridLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLayout"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#D59B9B"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/winnerMSG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/PlayAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="77dp"
+            android:layout_marginBottom="17dp"
+            android:onClick="rePlay"
+            android:text="Play Again"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/StartingWindow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="315dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mylogo" />
+
+</android.support.constraint.ConstraintLayout>
